@@ -7,6 +7,7 @@
   align-content: center;
   box-sizing: border-box;
   padding: 0 5em;
+  border-bottom: 1px #dbdbdb solid;
 }
 .header a {
   color: black;
@@ -29,14 +30,20 @@
 
 .search-input {
   height: auto;
-  font-size: 18px;
+  font-size: 14px;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 2px;
   border: 1px solid #dbdbdb;
   width: 200px;
   padding: 5px 0;
   outline: none;
   margin: 0 auto;
+  background: #fafafa;
+  caret-color: #dbdbdb;
+}
+::placeholder {
+  color: #dbdbdb;
+  font-weight: 100;
 }
 .search-input:active {
   outline: none;

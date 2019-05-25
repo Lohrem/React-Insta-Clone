@@ -1,0 +1,52 @@
+.post-card {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+#x {
+  border: 1px #dbdbdb solid;
+  margin-top: 10px;
+  background: white;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+  background: white;
+  padding: 5px 10px;
+}
+
+.profile-pic {
+  border-radius: 100%;
+  height: auto;
+  width: 32px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+.functions {
+  padding: 5px 3px;
+}
+.function-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  margin: 0 2px;
+  outline: none;
+}
+.comment {
+  transform: scaleX(-1)
+}
+
+.like-counter {
+  margin: 0 10px;
+  padding: 3px 5px;
+  font-size: 14px;
+}
