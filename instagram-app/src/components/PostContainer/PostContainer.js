@@ -1,6 +1,7 @@
 import React from 'react'
 import './PostContainer.css'
-// import CommentSection from '../CommentSection/CommentSection'
+import PropTypes from 'prop-types'
+import CommentSection from '../CommentSection/CommentSection'
 
 const PostContainer = (props) => {
   return (
@@ -18,9 +19,24 @@ const PostContainer = (props) => {
           <button className="function-btn comment"><i class="far fa-comment"></i></button>
         </div>
         <p className="like-counter"><strong>{props.dummies.likes } likes</strong></p>
-        {/* <CommentSection dummies={props.dummies.comments.username}/> */}
+        <CommentSection comments={props.dummies.comments}/>
       </div>
     </div>
 )}
+
+PostContainer.propTypes = {
+  dummies: PropTypes.arrayOf(
+    PropTypes.shape({
+      thumbnailUrl: PropTypes.string,
+      username: PropTypes.string,
+      imageUrl: PropTypes.string,
+      likes: PropTypes.number,
+      comments: PropTypes.arrayOf({
+        username: PropTypes.string,
+        text: PropTypes.string
+      })
+    })
+  )
+}
 
 export default PostContainer

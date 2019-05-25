@@ -7,9 +7,11 @@ import PostContainer from '../src/components/PostContainer/PostContainer'
 
 class App extends Component {
   state = {
-    dummies: dummyData
+    dummies: []
   }
-
+  componentDidMount() {
+    this.setState({ dummies: dummyData })
+  }
   render() {
     return (
       <div className="App">
